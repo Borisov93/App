@@ -1,0 +1,34 @@
+def print_nth_digit_of_pi(n):
+    """
+    Prints the nth digit of Pi.
+    
+    Parameters
+    ----------
+    n : int
+        The nth digit of Pi to be printed.
+    
+    Returns
+    -------
+    None
+        Prints the nth digit of Pi.
+    
+    Raises
+    ------
+    ValueError
+        If n is not an integer.
+    """
+    # Check if n is an integer
+    if not isinstance(n, int):
+        raise ValueError("n must be an integer")
+    
+    # Import math library
+    import math
+    
+    # Get the value of Pi
+    pi = math.pi
+    
+    # Get the nth digit of Pi
+    nth_digit = int(str(pi)[n+2])
+    
+    # Print the nth digit of Pi
+    print(nth_digit)
